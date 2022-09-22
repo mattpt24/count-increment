@@ -5,6 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+   color: mediumspringgreen;
+    background: rgb(58, 58, 58);
+    text-align: center;
+}
+
 #landing {
     padding: 2rem 1rem;
     min-height: 100vh;
@@ -22,6 +28,8 @@
     padding: 2rem 0;
     }
 }
+
+
 
 
 .counter,
