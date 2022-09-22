@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#landing {
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+    #landing {
+    flex-direction: column;
+    padding: 2rem 0;
+    }
+}
+
+
+.counter,
+h3,
+.icon {
+    color: mediumspringgreen;
+}
+
+
+.icon {
+    transition: all .3s ease;
+    color: mediumspringgreen;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+h3 {
+    font-weight: lighter;
+    font-size: 1.4rem;
+    color: #f8f8f8;
+}
+
+.counter {
+    font-size: 6rem;
+    font-weight: bolder;
+    font-weight: 900;
+}
+
+.counters {
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 5px solid #222;
+    width: 20vw;
+}
+
+@media screen and (max-width: 500px) {
+    .counters {
+        width: 100vw;
+    }
+}
+
+
+.counters:hover > .icon {
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.counters:hover {
+    background: rgba(0, 250, 154, 0.2);
+    transition: all .3s ease;
+    border-bottom: 5px solid mediumspringgreen;
+}
+
+
+.purchases {
+    position: relative;
+}
+.plus-sign {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgb(0, 250, 154);
+    font-size: 2rem;
+    bottom: 5rem;
+    font-weight: 900;
+    right: -2rem;
+}
